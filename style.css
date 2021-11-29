@@ -1,0 +1,204 @@
+*,
+*::after,
+*::before {
+  background-repeat: no-repeat;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/***************/
+/*** COMMON ***/
+/**************/
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: white;
+
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+/*************/
+/*** MAIN ***/
+/************/
+
+
+/********** Image hover *********/
+.previewCard a {
+  color: white;
+  text-decoration: none;
+}
+
+.previewCard {
+  color: white;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+
+  width: 327px;
+  height: 543px;
+  border-radius: 15px;
+}
+.previewCard .container {
+    width: 278px;
+    height: 278px;
+    margin: 24px;
+    position: relative;
+}
+
+.previewCard .container .middle{
+position: absolute;
+top: 0;
+width: 278px;
+height: 278px;
+border-radius: 15px;
+background-color: hsla(178, 100%, 50%, 0.516);
+opacity: 0;
+transition: .5s ease;
+cursor: pointer;
+}
+
+.previewCard .container .middle img{
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    width: 50px;
+
+    }
+
+.previewCard .container img {
+  width: 278px;
+  border-radius: 10px;
+}
+
+.previewCard .container:hover .middle {
+    opacity: 1;
+  }
+
+
+
+
+/********** Titel *********/
+.previewCard h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 0 0 15px 23px;
+}
+
+.previewCard h2 a:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.3s;
+}
+
+
+
+/********** main text *********/
+.previewCard > p {
+  color: hsl(215, 51%, 70%);
+
+  margin: 0 0 15px 23px;
+}
+
+
+
+/********** section under main text *********/
+.tD {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 23px;
+  margin-bottom: 15px;
+}
+
+.tD div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tD div p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+
+  margin-left: 5px !important;
+}
+
+.tD div:first-of-type p {
+  color: hsl(178, 100%, 50%);
+}
+
+.tD div img {
+  width: 13px;
+}
+.tD div:nth-child(2) img {
+  width: 17px;
+}
+
+
+
+
+
+.line {
+  background-color: hsl(215, 51%, 70%);
+  opacity: 70%;
+
+  width: 278px;
+  height: 1px;
+  margin: 0 0 15px 23px;
+}
+
+
+
+
+/********** Info creator *********/
+.previewCard figure {
+  margin: 0 0 16px 23px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.previewCard figure img {
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.previewCard figure figcaption {
+  color: hsl(215, 51%, 70%);
+
+  display: flex;
+  flex-direction: row;
+  margin-left: 17px;
+}
+
+.previewCard figure figcaption p {
+  color: white;
+
+  margin-left: 3px;
+}
+
+.previewCard figure figcaption p a:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.3s;
+}
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
